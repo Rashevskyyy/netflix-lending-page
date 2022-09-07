@@ -1,6 +1,6 @@
 import { Button, Input, styled } from '@mui/material';
 
-export const Text = styled('div')(() => ({
+export const TextMain = styled('div')(() => ({
     display: "flex",
     textAlign: "center",
     justifyContent: "center",

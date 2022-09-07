@@ -1,6 +1,6 @@
 import { Container, styled } from '@mui/material';
 
-export const Text = styled('div')(() => ({
+export const TextMain = styled('div')(() => ({
     flex: '0 1 auto',
     height: "100%",
     padding: "0 3rem 0 0",
@@ -45,11 +45,11 @@ export const Video = styled('video')(() => ({
 
 export const BoxTv = styled('div')(() => ({
     position: 'absolute',
-    top: "46%",
+    top: "33%",
     left: "49%",
     transform: "translate(-50%, -50%)",
-    maxHeight: "84%",
-    maxWidth: "74%",
+    maxHeight: "47%",
+    maxWidth: "63%",
     height: "100%",
     width: "100%",
 }))

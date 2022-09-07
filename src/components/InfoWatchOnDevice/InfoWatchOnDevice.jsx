@@ -1,22 +1,30 @@
 import React from 'react';
-import {Typography} from '@mui/material';
-import {BoxTv, Image, StyledContainer, Text, ContainerMedia, Video, Media} from './InfoWatchOnDeviceStyle';
-import watch from "../../images/tv.png"
-import videoTv from "../../images/video-tv-0819.m4v"
-import {title} from './constants';
+import {
+    BoxTv,
+    Image,
+    StyledContainer,
+    ContainerMedia,
+    Video,
+    Media,
+    TextMain
+} from './InfoWatchOnDeviceStyle';
+import watch from "../../images/device-pile.png"
+import videoTv from "../../images/video-devices.m4v"
+import {titleWatchOnDevice} from '../constants';
+import {TextRoot, TextSecondary} from '../indexStyle';
 
-const InfoTV = () => {
+const InfoWatchOnDevice = () => {
     return (
         <>
             <StyledContainer disableGutters={true} maxWidth={false}>
-                <Text>
-                    <Typography sx={{fontSize: "3.125rem"}} color="white" fontWeight={'bold'} gutterBottom>
-                        {title.root}
-                    </Typography>
-                    <Typography sx={{fontSize: "1.625rem"}} color="white" gutterBottom>
-                        {title.secondary}
-                    </Typography>
-                </Text>
+                <TextMain>
+                    <TextRoot gutterBottom>
+                        {titleWatchOnDevice.root}
+                    </TextRoot>
+                    <TextSecondary gutterBottom>
+                        {titleWatchOnDevice.secondary}
+                    </TextSecondary>
+                </TextMain>
                 <ContainerMedia>
                     <Media>
                         <Image src={watch} alt="watch"/>
@@ -32,4 +40,4 @@ const InfoTV = () => {
     );
 };
 
-export default InfoTV;
+export default InfoWatchOnDevice;

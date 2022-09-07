@@ -14,7 +14,7 @@ import {
 } from './InfoDownloadStyle';
 import mobile from "../../images/mobile-0819.jpg"
 import film from "../../images/boxshot.png"
-import {Text} from '../indexStyle';
+import {TextRoot, TextSecondary} from '../indexStyle';
 import {titleInfoDownload} from '../constants';
 
 const InfoDownload = () => {
@@ -35,12 +35,12 @@ const InfoDownload = () => {
                     </Media>
                 </ContainerMedia>
                 <TextMain>
-                    <Text gutterBottom>
+                    <TextRoot gutterBottom>
                         {titleInfoDownload.root}
-                    </Text>
-                    <Text sx={{fontSize: "1.625rem", fontWeight: 'unset'}} gutterBottom>
+                    </TextRoot>
+                    <TextSecondary gutterBottom>
                         {titleInfoDownload.secondary}
-                    </Text>
+                    </TextSecondary>
                 </TextMain>
 
             </StyledContainer>

@@ -1,6 +1,6 @@
 import { Container, styled } from '@mui/material';
 
-export const Text = styled('div')(() => ({
+export const TextMain = styled('div')(() => ({
    flex: '0 1 auto',
     height: "100%",
     padding: "0 3rem 0 0",
