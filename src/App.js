@@ -1,6 +1,6 @@
 import Header from './components/Header/Header';
 import Info from './components/Info/Info';
-import {Root, RootTV, RootDownload} from './AppStyle.ts';
+import {Root, RootTV, RootDownload} from './AppStyle';
 import InfoTV from './components/InfoTV/InfoTV';
 import InfoDownload from './components/InfoDownload/InfoDownload';
 

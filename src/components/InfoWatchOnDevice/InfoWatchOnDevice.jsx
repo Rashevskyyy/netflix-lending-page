@@ -1,9 +1,9 @@
 import React from 'react';
 import {Typography} from '@mui/material';
-import {BoxTv, Image, StyledContainer, Text, ContainerMedia, Video, Media} from './InfoTVStyle.js';
+import {BoxTv, Image, StyledContainer, Text, ContainerMedia, Video, Media} from './InfoWatchOnDeviceStyle';
 import watch from "../../images/tv.png"
 import videoTv from "../../images/video-tv-0819.m4v"
-import {titleTV} from '../constants';
+import {title} from './constants';
 
 const InfoTV = () => {
     return (
@@ -11,10 +11,10 @@ const InfoTV = () => {
             <StyledContainer disableGutters={true} maxWidth={false}>
                 <Text>
                     <Typography sx={{fontSize: "3.125rem"}} color="white" fontWeight={'bold'} gutterBottom>
-                        {titleTV.root}
+                        {title.root}
                     </Typography>
                     <Typography sx={{fontSize: "1.625rem"}} color="white" gutterBottom>
-                        {titleTV.secondary}
+                        {title.secondary}
                     </Typography>
                 </Text>
                 <ContainerMedia>

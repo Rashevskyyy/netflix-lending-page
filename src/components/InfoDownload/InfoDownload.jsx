@@ -11,11 +11,11 @@ import {
     TextCard,
     TextCardDownload,
     GifBox
-} from './InfoDownloadStyle.ts';
+} from './InfoDownloadStyle';
 import mobile from "../../images/mobile-0819.jpg"
 import film from "../../images/boxshot.png"
-import {Text} from '../indexStyle.ts';
-import {title} from './constants.ts';
+import {Text} from '../indexStyle';
+import {titleInfoDownload} from '../constants';
 
 const InfoDownload = () => {
     return (
@@ -36,10 +36,10 @@ const InfoDownload = () => {
                 </ContainerMedia>
                 <TextMain>
                     <Text gutterBottom>
-                        {title.root}
+                        {titleInfoDownload.root}
                     </Text>
                     <Text sx={{fontSize: "1.625rem", fontWeight: 'unset'}} gutterBottom>
-                        {title.secondary}
+                        {titleInfoDownload.secondary}
                     </Text>
                 </TextMain>
 

@@ -8,7 +8,7 @@ import {
     StyledBox,
     StyledSelect,
     StyledFormControl
-} from './HeaderStyle.ts';
+} from './HeaderStyle.js';
 import {InputLabel, MenuItem} from '@mui/material';
 
 

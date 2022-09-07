@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container, Typography} from '@mui/material';
-import {Box, Text, Watch, StyledTextField, StyledButton} from './InfoStyle.ts';
-import {title} from './constants.ts';
+import {Box, Text, Watch, StyledTextField, StyledButton} from './InfoStyle';
 import {ArrowRightAltOutlined} from '@mui/icons-material';
+import {titleInfo} from '../constants';
 
 
 const Info = () => {
@@ -12,13 +12,13 @@ const Info = () => {
                 <Box>
                     <Text>
                         <Typography sx={{fontSize: "3.125rem"}} color="white" fontWeight={'bold'} gutterBottom>
-                            {title.root}
+                            {titleInfo.root}
                         </Typography>
                         <Typography sx={{fontSize: "1.625rem"}} color="white" gutterBottom>
-                            {title.secondary}
+                            {titleInfo.secondary}
                         </Typography>
                         <Typography sx={{fontSize: 18}} color="white" gutterBottom>
-                            {title.ready}
+                            {titleInfo.ready}
                         </Typography>
                     </Text>
                     <Watch>
@@ -30,7 +30,7 @@ const Info = () => {
                             endIcon={<ArrowRightAltOutlined/>}
                             size="medium"
                             variant="contained">
-                            {title.goWatch}
+                            {titleInfo.goWatch}
                         </StyledButton>
                     </Watch>
                 </Box>
