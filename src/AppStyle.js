@@ -11,12 +11,8 @@ export const Root = styled('div')(() => ({
     borderBottom: "8px solid #222",
 }))
 
-export const RootTV = styled('div')(() => ({
+export const RootCard = styled('div')(() => ({
     backgroundColor: "#000",
     borderBottom: "8px solid #222",
 }))
 
-export const RootDownload = styled('div')(() => ({
-    backgroundColor: "#000",
-    borderBottom: "8px solid #222",
-}))

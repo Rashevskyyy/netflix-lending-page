@@ -1,22 +1,22 @@
 import React from 'react';
-import {Typography} from '@mui/material';
-import {BoxTv, Image, StyledContainer, Text, ContainerMedia, Video, Media} from './InfoTVStyle.js';
+import {BoxTv, Image, StyledContainer, ContainerMedia, Video, Media, TextMain} from './InfoTVStyle.js';
 import watch from "../../images/tv.png"
 import videoTv from "../../images/video-tv-0819.m4v"
 import {titleTV} from '../constants';
+import {TextRoot, TextSecondary} from '../indexStyle';
 
 const InfoTV = () => {
     return (
         <>
             <StyledContainer disableGutters={true} maxWidth={false}>
-                <Text>
-                    <Typography sx={{fontSize: "3.125rem"}} color="white" fontWeight={'bold'} gutterBottom>
+                <TextMain>
+                    <TextRoot gutterBottom>
                         {titleTV.root}
-                    </Typography>
-                    <Typography sx={{fontSize: "1.625rem"}} color="white" gutterBottom>
+                    </TextRoot>
+                    <TextSecondary gutterBottom>
                         {titleTV.secondary}
-                    </Typography>
-                </Text>
+                    </TextSecondary>
+                </TextMain>
                 <ContainerMedia>
                     <Media>
                         <Image src={watch} alt="watch"/>
