@@ -8,6 +8,8 @@ export const titleInfo = {
 export const titleInfoDownload = {
     root: "Загружайте сериалы для просмотра офлайн.",
     secondary: "Сохраняйте видео в избранном, и у вас всегда будет, что посмотреть.",
+    textCard: "Очень странные дела",
+    textCardDownload: "Идет загрузка...",
 }
 
 export const titleTV = {

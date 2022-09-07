@@ -1,6 +1,5 @@
 import { styled } from '@mui/material';
-import image from './images/UA-ru-20220829-popsignuptwoweeks-perspective_alpha_website_small.jpg'
-
+import image from './images/backgroundFilms.jpg'
 
 export const Root = styled('div')(() => ({
     backgroundImage: `radial-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(${image})`,

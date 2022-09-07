@@ -1,6 +1,6 @@
-import { Button, Input, styled } from '@mui/material';
+import {Box, Button, Input, styled} from '@mui/material';
 
-export const TextMain = styled('div')(() => ({
+export const TextContainer = styled('div')(() => ({
     display: "flex",
     textAlign: "center",
     justifyContent: "center",
@@ -8,7 +8,7 @@ export const TextMain = styled('div')(() => ({
     flexDirection: "column",
 }))
 
-export const Box = styled('div')(() => ({
+export const BoxContainer = styled(Box)(() => ({
     background: "inherit",
     display: "flex",
     flexDirection: "column",
@@ -38,5 +38,7 @@ export const StyledTextField = styled(Input)({
     padding: "20px 20px",
     borderBottomRightRadius: "0!important",
     borderTopRightRadius: "0!important",
-
+    background: 'white',
+    borderRadius: "4px",
+    width: "500px",
 });
