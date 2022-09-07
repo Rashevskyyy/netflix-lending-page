@@ -1,6 +1,5 @@
 import { Typography, styled } from '@mui/material';
 
-
 export const TextRoot = styled(Typography)(() => ({
     fontSize: "3.125rem",
     lineHeight: '1.1',

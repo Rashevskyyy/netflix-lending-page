@@ -1,6 +1,6 @@
 import { Container, styled } from '@mui/material';
 
-export const TextMain = styled('div')(() => ({
+export const TextContainer = styled('div')(() => ({
     flex: '0 1 auto',
     height: "100%",
     padding: "0 3rem 0 0",
@@ -25,7 +25,7 @@ export const Image = styled('img')(() => ({
     border: '0'
 }))
 
-export const ContainerMedia = styled('div')(() => ({
+export const MediaContainer = styled('div')(() => ({
     boxSizing: "border-box",
     display: 'flex',
     flex: "0 1 auto",

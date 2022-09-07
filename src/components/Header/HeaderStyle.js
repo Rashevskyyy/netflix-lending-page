@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, FormControl, Select, styled, Toolbar } from '@mui/material';
+import {AppBar, Box, Button, FormControl, InputLabel, Select, styled, Toolbar} from '@mui/material';
 
 export const Bar = styled('div')(() => ({
     flexGrow: 1
@@ -6,7 +6,9 @@ export const Bar = styled('div')(() => ({
 
 export const StyledAppBar = styled(AppBar)(() => ({
     backgroundColor: 'unset',
-    boxShadow: "unset"
+    boxShadow: "unset",
+    color: "inherit",
+    position: "static",
 }))
 
 export const StyledToolbar = styled(Toolbar)(() => ({
@@ -26,6 +28,10 @@ export const StyledSelect = styled(Select)(() => ({
         backgroundColor: "#5b5b5b"
 
     }
+}))
+
+export const StyledInputLabel = styled(InputLabel)(() => ({
+    color: 'white',
 }))
 
 export const StyledFormControl = styled(FormControl)(() => ({

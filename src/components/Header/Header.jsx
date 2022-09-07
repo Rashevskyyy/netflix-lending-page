@@ -7,9 +7,9 @@ import {
     StyledToolbar,
     StyledBox,
     StyledSelect,
-    StyledFormControl
+    StyledFormControl, StyledInputLabel
 } from './HeaderStyle.js';
-import {InputLabel, MenuItem} from '@mui/material';
+import {MenuItem} from '@mui/material';
 
 
 const Header = () => {
@@ -20,42 +20,39 @@ const Header = () => {
     };
 
     return (
-        <StyledAppBar
-        color="inherit"
-        position="static"
-    >
-        <StyledToolbar>
-            <Bar>
-                <img src={logo} alt="logo"/>
-            </Bar>
-            <StyledBox>
-                <StyledFormControl variant="standard" fullWidth>
-                    <InputLabel sx={{color: "white"}} id="demo-simple-select-label">Язык</InputLabel>
-                    <StyledSelect
-                        value={lang}
-                        label="Русский"
-                        defaultValue={lang}
-                        onChange={handleChange}
-                        MenuProps={{
-                            disableScrollLock: true,
-                            sx: {
-                                ".MuiList-root": {
-                                    "&.MuiMenu-list": {
-                                        backgroundColor: "#959595"
+        <StyledAppBar>
+            <StyledToolbar>
+                <Bar>
+                    <img src={logo} alt="logo"/>
+                </Bar>
+                <StyledBox>
+                    <StyledFormControl variant="standard" fullWidth>
+                        <StyledInputLabel>Язык</StyledInputLabel>
+                        <StyledSelect
+                            value={lang}
+                            label="Русский"
+                            defaultValue={lang}
+                            onChange={handleChange}
+                            MenuProps={{
+                                disableScrollLock: true,
+                                sx: {
+                                    ".MuiList-root": {
+                                        "&.MuiMenu-list": {
+                                            backgroundColor: "#959595"
+                                        }
                                     }
                                 }
-                            }
-                        }}
-                    >
-                        <MenuItem value={"Русский"}>Русский</MenuItem>
-                        <MenuItem value={"Украинский"}>Украинский</MenuItem>
-                        <MenuItem value={"English"}>English</MenuItem>
-                    </StyledSelect>
-                </StyledFormControl>
-                <StyledButton>Войти</StyledButton>
-            </StyledBox>
-        </StyledToolbar>
-    </StyledAppBar>
+                            }}
+                        >
+                            <MenuItem value={"Русский"}>Русский</MenuItem>
+                            <MenuItem value={"Украинский"}>Украинский</MenuItem>
+                            <MenuItem value={"English"}>English</MenuItem>
+                        </StyledSelect>
+                    </StyledFormControl>
+                    <StyledButton>Войти</StyledButton>
+                </StyledBox>
+            </StyledToolbar>
+        </StyledAppBar>
     );
 };
 

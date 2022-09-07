@@ -1,7 +1,7 @@
 import { Container, styled } from '@mui/material';
 
 
-export const TextMain = styled('div')(() => ({
+export const TextContainer = styled('div')(() => ({
     flex: '0 1 auto',
     height: "100%",
     padding: "0 0 0 0",
@@ -9,14 +9,14 @@ export const TextMain = styled('div')(() => ({
     zIndex: '3'
 }))
 
-export const TextCard = styled(TextMain)(() => ({
+export const TextCard = styled(TextContainer)(() => ({
     padding: "0",
     width: '100%',
     fontWeight: 600,
     fontSize: "1rem"
 }))
 
-export const TextCardDownload = styled(TextMain)(() => ({
+export const TextCardDownload = styled(TextContainer)(() => ({
     padding: "0",
     color: '#0071eb',
     width: '100%',
@@ -73,7 +73,7 @@ export const GifBox = styled('div')(() => ({
     width: '3em'
 }))
 
-export const ContainerMedia = styled('div')(() => ({
+export const MediaContainer = styled('div')(() => ({
     boxSizing: "border-box",
     display: 'flex',
     flex: "0 1 auto",

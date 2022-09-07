@@ -1,35 +1,32 @@
 import React from 'react';
 import {
-    ContainerMedia,
-    TextMain,
+    MediaContainer,
+    TextContainer,
     StyledContainer,
     Image,
     Media,
 } from './InfoKidsStyle';
-import mobile from "../../images/AAAABfpnX3dbgjZ-Je8Ax3xn0kXehZm_5L6-xe6YSTq_ucht9TI5jwDMqusWZKNYT8DfGudD0_wWVVTFLiN2_kaQJumz2iivUWbIbAtF.png"
+import kids from "../../images/kids.png"
 import {TextRoot, TextSecondary} from '../indexStyle';
 import {titleKids} from '../constants';
 
 const InfoKids = () => {
     return (
-        <>
-            <StyledContainer disableGutters={true} maxWidth={false}>
-                <ContainerMedia>
-                    <Media>
-                        <Image src={mobile} alt="mobile"/>
-                    </Media>
-                </ContainerMedia>
-                <TextMain>
-                    <TextRoot gutterBottom>
-                        {titleKids.root}
-                    </TextRoot>
-                    <TextSecondary gutterBottom>
-                        {titleKids.secondary}
-                    </TextSecondary>
-                </TextMain>
-
-            </StyledContainer>
-        </>
+        <StyledContainer disableGutters={true} maxWidth={false}>
+            <MediaContainer>
+                <Media>
+                    <Image src={kids} alt="kids"/>
+                </Media>
+            </MediaContainer>
+            <TextContainer>
+                <TextRoot gutterBottom>
+                    {titleKids.root}
+                </TextRoot>
+                <TextSecondary gutterBottom>
+                    {titleKids.secondary}
+                </TextSecondary>
+            </TextContainer>
+        </StyledContainer>
     );
 };
 
