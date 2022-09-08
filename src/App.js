@@ -5,6 +5,8 @@ import InfoTV from './components/InfoTV/InfoTV';
 import InfoDownload from './components/InfoDownload/InfoDownload';
 import InfoWatchOnDevice from './components/InfoWatchOnDevice/InfoWatchOnDevice';
 import InfoKids from './components/InfoKids/InfoKids';
+import Faq from './components/Faq/Faq';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
     return (
@@ -24,6 +26,12 @@ const App = () => {
             </RootCard>
             <RootCard>
                 <InfoKids />
+            </RootCard>
+            <RootCard>
+                <Faq />
+            </RootCard>
+            <RootCard>
+                <Footer />
             </RootCard>
         </>
 
