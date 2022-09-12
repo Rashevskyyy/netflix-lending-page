@@ -10,18 +10,19 @@ import {
 } from './InfoWatchOnDeviceStyle';
 import watch from "../../images/device-pile.png"
 import videoTv from "../../images/video-devices.m4v"
-import {titleWatchOnDevice} from '../constants';
 import {TextRoot, TextSecondary} from '../indexStyle';
+import {useTranslation} from 'react-i18next';
 
 const InfoWatchOnDevice = () => {
+    const { t } = useTranslation('', { keyPrefix: 'infoWatchOnDevice'})
     return (
         <StyledContainer disableGutters={true} maxWidth={false}>
             <TextContainer>
                 <TextRoot gutterBottom>
-                    {titleWatchOnDevice.root}
+                    {t("root")}
                 </TextRoot>
                 <TextSecondary gutterBottom>
-                    {titleWatchOnDevice.secondary}
+                    {t("secondary")}
                 </TextSecondary>
             </TextContainer>
             <MediaContainer>

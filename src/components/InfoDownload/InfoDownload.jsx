@@ -15,9 +15,11 @@ import {
 import mobile from "../../images/mobile.jpg"
 import film from "../../images/boxshot.png"
 import {TextRoot, TextSecondary} from '../indexStyle';
-import {titleInfoDownload} from '../constants';
+import {useTranslation} from 'react-i18next';
 
 const InfoDownload = () => {
+    const { t } = useTranslation('', { keyPrefix: 'infoDownload'})
+
     return (
         <StyledContainer disableGutters={true} maxWidth={false}>
             <MediaContainer>
@@ -26,8 +28,8 @@ const InfoDownload = () => {
                     <CardDownload>
                         <ImageBox src={film} alt="film" />
                         <TextBox>
-                            <TextCard>{titleInfoDownload.textCard}</TextCard>
-                            <TextCardDownload>{titleInfoDownload.textCardDownload}</TextCardDownload>
+                            <TextCard>{t("textCard")}</TextCard>
+                            <TextCardDownload>{t("textCardDownload")}</TextCardDownload>
                         </TextBox>
                         <GifBox />
                     </CardDownload>
@@ -35,10 +37,10 @@ const InfoDownload = () => {
             </MediaContainer>
             <TextContainer>
                 <TextRoot gutterBottom>
-                    {titleInfoDownload.root}
+                    {t("root")}
                 </TextRoot>
                 <TextSecondary gutterBottom>
-                    {titleInfoDownload.secondary}
+                    {t("secondary")}
                 </TextSecondary>
             </TextContainer>
         </StyledContainer>

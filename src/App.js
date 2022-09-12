@@ -1,3 +1,4 @@
+import './i18n';
 import Header from './components/Header/Header';
 import Info from './components/Info/Info';
 import {Root, RootCard} from './AppStyle';

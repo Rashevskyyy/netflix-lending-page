@@ -8,9 +8,11 @@ import {
 } from './InfoKidsStyle';
 import kids from "../../images/kids.png"
 import {TextRoot, TextSecondary} from '../indexStyle';
-import {titleKids} from '../constants';
+import {useTranslation} from 'react-i18next';
 
 const InfoKids = () => {
+    const { t } = useTranslation('', { keyPrefix: 'infoKids'})
+
     return (
         <StyledContainer disableGutters={true} maxWidth={false}>
             <MediaContainer>
@@ -20,10 +22,10 @@ const InfoKids = () => {
             </MediaContainer>
             <TextContainer>
                 <TextRoot gutterBottom>
-                    {titleKids.root}
+                    {t("root")}
                 </TextRoot>
                 <TextSecondary gutterBottom>
-                    {titleKids.secondary}
+                    {t("secondary")}
                 </TextSecondary>
             </TextContainer>
         </StyledContainer>
