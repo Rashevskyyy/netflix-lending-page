@@ -2,18 +2,20 @@ import React from 'react';
 import {BoxTv, Image, StyledContainer, MediaContainer, Video, Media, TextContainer} from './InfoTVStyle.js';
 import watch from "../../images/tv.png"
 import videoTv from "../../images/video-tv.m4v"
-import {titleTV} from '../constants';
 import {TextRoot, TextSecondary} from '../indexStyle';
+import {useTranslation} from 'react-i18next';
 
 const InfoTV = () => {
+    const { t } = useTranslation('', { keyPrefix: 'infoTV'})
+
     return (
         <StyledContainer disableGutters={true} maxWidth={false}>
             <TextContainer>
                 <TextRoot gutterBottom>
-                    {titleTV.root}
+                    {t("root")}
                 </TextRoot>
                 <TextSecondary gutterBottom>
-                    {titleTV.secondary}
+                    {t("secondary")}
                 </TextSecondary>
             </TextContainer>
             <MediaContainer>

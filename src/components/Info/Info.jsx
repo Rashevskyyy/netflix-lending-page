@@ -2,34 +2,36 @@ import React from 'react';
 import {Container, Typography} from '@mui/material';
 import {Watch, StyledTextField, StyledButton, TextContainer, BoxContainer} from './InfoStyle';
 import {ArrowRightAltOutlined} from '@mui/icons-material';
-import {titleInfo} from '../constants';
 import {TextRoot, TextSecondary} from '../indexStyle';
+import {useTranslation} from 'react-i18next';
 
 
 const Info = () => {
+    const { t } = useTranslation('', { keyPrefix: 'info'})
+
     return (
         <Container disableGutters={true} sx={{margin: "0"}} maxWidth={false}>
             <BoxContainer>
                 <TextContainer>
                     <TextRoot gutterBottom>
-                        {titleInfo.root}
+                        {t("root")}
                     </TextRoot>
                     <TextSecondary gutterBottom>
-                        {titleInfo.secondary}
+                        {t("secondary")}
                     </TextSecondary>
                     <Typography sx={{fontSize: 18}} color="white" gutterBottom>
-                        {titleInfo.ready}
+                        {t("ready")}
                     </Typography>
                 </TextContainer>
                 <Watch>
                     <StyledTextField
-                        placeholder={"Адрес электронной почты"}
+                        placeholder= {t("placeholderEmail")}
                     />
                     <StyledButton
                         endIcon={<ArrowRightAltOutlined/>}
                         size="medium"
                         variant="contained">
-                        {titleInfo.goWatch}
+                        {t("goWatch")}
                     </StyledButton>
                 </Watch>
             </BoxContainer>

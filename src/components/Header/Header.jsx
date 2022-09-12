@@ -10,12 +10,15 @@ import {
     StyledFormControl, StyledInputLabel
 } from './HeaderStyle.js';
 import {MenuItem} from '@mui/material';
+import {useTranslation} from 'react-i18next';
 
 
 const Header = () => {
-    const [lang, setLang] = React.useState('Русский');
+    const { t, i18n } = useTranslation('', {keyPrefix: 'header'})
+    const [lang, setLang] = React.useState(i18n.resolvedLanguage);
 
     const handleChange = (event) => {
+        i18n.changeLanguage(event.target.value)
         setLang(event.target.value);
     };
 
@@ -27,10 +30,10 @@ const Header = () => {
                 </Bar>
                 <StyledBox>
                     <StyledFormControl variant="standard" fullWidth>
-                        <StyledInputLabel>Язык</StyledInputLabel>
+                        <StyledInputLabel>{t("language")}</StyledInputLabel>
                         <StyledSelect
                             value={lang}
-                            label="Русский"
+                            label={t("label")}
                             defaultValue={lang}
                             onChange={handleChange}
                             MenuProps={{
@@ -44,12 +47,12 @@ const Header = () => {
                                 }
                             }}
                         >
-                            <MenuItem value={"Русский"}>Русский</MenuItem>
-                            <MenuItem value={"Украинский"}>Украинский</MenuItem>
-                            <MenuItem value={"English"}>English</MenuItem>
+                            <MenuItem value={"ru"}>{t("ru")}</MenuItem>
+                            <MenuItem value={"ua"}>{t("ua")}</MenuItem>
+                            <MenuItem value={"en"}>{t("en")}</MenuItem>
                         </StyledSelect>
                     </StyledFormControl>
-                    <StyledButton>Войти</StyledButton>
+                    <StyledButton>{t("login")}</StyledButton>
                 </StyledBox>
             </StyledToolbar>
         </StyledAppBar>

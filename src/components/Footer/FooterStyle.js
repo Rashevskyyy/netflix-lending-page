@@ -1,20 +1,21 @@
-import { Container, styled } from '@mui/material';
+import {Container, List, styled, Typography} from '@mui/material';
 
 
-export const TextContainer = styled('div')(() => ({
-    flex: '0 1 auto',
-    height: "100%",
-    padding: "0 0 0 0",
-    width: '50%',
-    zIndex: '3'
+export const Text = styled(Typography)(() => ({
+    color: "#737373",
+    padding: '16px'
+}))
+
+export const StyledList = styled(List)(() => ({
+    fontSize: '13px'
 }))
 
 export const StyledContainer = styled(Container)(() => ({
     display: "flex",
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
     margin: '0 auto',
     maxWidth: '1300px',
-    padding: '30px 350px',
-    flexDirection: 'column'
+    padding: '30px 150px!important',
+    flexDirection: 'column',
 }))
