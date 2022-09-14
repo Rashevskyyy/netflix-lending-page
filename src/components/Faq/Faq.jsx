@@ -11,7 +11,7 @@ import {useTranslation} from 'react-i18next';
 
 const Faq = () => {
     const [expanded, setExpanded] = React.useState(false);
-    const { t } = useTranslation('', { keyPrefix: 'faq'})
+    const {t} = useTranslation('', {keyPrefix: 'faq'})
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);

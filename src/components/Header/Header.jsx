@@ -7,14 +7,15 @@ import {
     StyledToolbar,
     StyledBox,
     StyledSelect,
-    StyledFormControl, StyledInputLabel
+    StyledFormControl,
+    StyledInputLabel
 } from './HeaderStyle.js';
 import {MenuItem} from '@mui/material';
 import {useTranslation} from 'react-i18next';
 
 
 const Header = () => {
-    const { t, i18n } = useTranslation('', {keyPrefix: 'header'})
+    const {t, i18n} = useTranslation('', {keyPrefix: 'header'})
     const [lang, setLang] = React.useState(i18n.resolvedLanguage);
 
     const handleChange = (event) => {
@@ -43,7 +44,18 @@ const Header = () => {
                                         "&.MuiMenu-list": {
                                             backgroundColor: "#959595"
                                         }
-                                    }
+                                    },
+                                    ".MuiInputBase-root": {
+                                        "&.MuiInput-root": {
+                                            "&.MuiSelect-root": {
+                                                "&::after": {
+                                                    backgroundColor: "black",
+                                                    borderBottom: "2px solid #000!important"
+                                                }
+                                            }
+                                        }
+
+                                    },
                                 }
                             }}
                         >
